@@ -1,6 +1,6 @@
 # Head First HTML5 Source Code
 
-![Head First HTML5](hfhtml5.jpg)
+![Head First HTML5](https://github.com/TCLee/headfirst-html5-code/raw/master/hfhtml5.jpg)
 
 ## Overview
 ***
