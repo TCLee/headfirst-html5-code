@@ -1,0 +1,147 @@
+/* 
+   notetoself.css
+
+Tested in: Firefox4RC, Safari 5, Opera 11, Chrome 10
+Transition (ease-in) doesn't work in Firefox 3.
+
+*/
+
+
+body {
+	background-color: #dbdbdb;
+	font-size: 100%;
+}
+
+/* sticky note */
+
+ul#stickies li {
+	display: block;
+	list-style: none;
+	z-index: 1;
+	float: left; 
+	margin: 30px;
+	padding: 15px 15px 50px 15px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #bfbfbf;
+    background-color: LightGoldenRodYellow;  /* use #fafad2 if name doesn't work */
+	color: black;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+	overflow: hidden;
+} 
+
+ul#stickies li span.sticky {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 200%;
+}
+
+/* 
+ * rotation
+ */
+ul#stickies li:nth-child(even) {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+ul#stickies li:nth-child(odd) {
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
+ul#stickies li:nth-child(3n) {
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	-ms-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+
+/* 
+   Transform demo 
+   Uses the transition (defined above) to ease in.
+*/
+ul#stickies li:hover {
+	-webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+	-webkit-transform: rotate(0deg) scale(1.25);
+	-moz-transform: rotate(0deg) scale(1.25);
+	-o-transform: rotate(0deg) scale(1.25);
+	-ms-transform: rotate(0deg) scale(1.25);
+	transform: rotate(0deg) scale(1.25);
+	z-index: 10;
+}
+
+
+/* 
+  Custom CSS from:
+    http://net.tutsplus.com/tutorials/html-css-techniques/design-a-prettier-web-form-with-css-3/ 
+*/
+
+form {
+  font: normal 15px Verdana, Helvetica, sans-serif;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select {  
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+}
+
+form input#note_text {
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+  font-size: 15px;
+	width: 400px;
+	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+form input#note_text:hover,
+form input#note_text:focus {
+	border-color: #C9C9C9;
+	-moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}
+
+form input#add_button {
+	width: auto;
+	padding: 9px 15px;
+	background: #617798;
+	border: 0;
+	font-size: 15px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+form input#add_button:hover, 
+form input#add_button:focus {
+	background: #314768;
+}
