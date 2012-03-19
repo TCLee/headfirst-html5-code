@@ -1,0 +1,47 @@
+# Head First HTML5 Source Code
+
+![Head First HTML5](hfhtml5.jpg)
+
+## Overview
+***
+
+These are the source code for the projects from the book [Head First HTML5](http://www.amazon.com/exec/obidos/ASIN/1449390544/elisabethfree-20).
+
+If you want to run these sample projects locally on your computer, you will need to setup a 
+web server on your computer.
+
+## Source Code
+***
+
+### Geolocation
+
+- **Track My Location** - Track your location as you move around the city.
+  
+  
+### Web Service
+
+- **Mighty Gumball** - Get the latest gumball sales data from a web service using JSONP.
+
+### Canvas
+
+- **Smiley** - Draws a smiley face on the canvas to brighten up your day.
+
+- **TweetShirt** - Draws a tweet from your favorite Twitter user on a T-Shirt design of your choosing.
+
+### Video
+
+- **Webville TV** - A HTML5 video player with playlist support.
+
+- **Video Booth** - A HTML5 video player with custom controls and video effects (e.g. black & white, sepia etc.)
+
+
+### Local Storage
+
+- **Playlist** - Saves your music playlist to the browser's local storage.
+
+- **Stickies** - Create sticky notes to remind yourself of things to do (or not to do).
+
+### Web Workers
+
+- **Fractals** - Draw some fancy fractal patterns on the canvas using multiple web workers to speed things up.
+
