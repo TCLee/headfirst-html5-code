@@ -3,7 +3,6 @@
 ![Head First HTML5](https://github.com/TCLee/headfirst-html5-code/raw/master/hfhtml5.jpg)
 
 ## Overview
-***
 
 These are the source code for the projects from the book [Head First HTML5](http://www.amazon.com/exec/obidos/ASIN/1449390544/elisabethfree-20).
 
@@ -11,7 +10,6 @@ If you want to run these sample projects locally on your computer, you will need
 web server on your computer.
 
 ## Source Code
-***
 
 ### Geolocation
 
@@ -20,7 +18,7 @@ web server on your computer.
   
 ### Web Service
 
-- **Mighty Gumball** - Get the latest gumball sales data from a web service using JSONP.
+- **Mighty Gumball** - Gets the latest sales data from Mighty Gumball's web service using JSONP.
 
 ### Canvas
 
@@ -43,5 +41,5 @@ web server on your computer.
 
 ### Web Workers
 
-- **Fractals** - Draw some fancy fractal patterns on the canvas using multiple web workers to speed things up.
+- **Fractals** - Draws some fancy fractal patterns on the canvas using multiple web workers to speed things up.
 
