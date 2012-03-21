@@ -28,6 +28,8 @@ web server on your computer.
 
 ### Video
 
+*Video files are not included due to GitHub's file size limits. You can download the videos from [http://wickedlysmart.com/hfhtml5/hfhtml5.zip](http://wickedlysmart.com/hfhtml5/hfhtml5.zip).*
+
 - **Webville TV** - A HTML5 video player with playlist support.
 
 - **Video Booth** - A HTML5 video player with custom controls and video effects (e.g. black & white, sepia etc.)
