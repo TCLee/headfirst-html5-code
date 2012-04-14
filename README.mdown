@@ -45,3 +45,7 @@ web server on your computer.
 
 - **Fractals** - Draws some fancy fractal patterns on the canvas using multiple web workers to speed things up.
 
+### Web Sockets
+
+- **WebSocket** - Getting started with HTML5 Web Sockets using [node.js](http://nodejs.org/) and [socket.io](http://socket.io/).
+
