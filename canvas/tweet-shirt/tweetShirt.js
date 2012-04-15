@@ -111,9 +111,7 @@ function drawText(canvas, context) {
     context.fillText("I saw this tweet", 20, 40);
     
     // Draw the selected tweet's text.
-    // TODO: Test only! Remove later!
-    var tweet = "This is a very long tweet. This is a very VERY long tweet. This is an even LONGER tweet. This is a SUPER long tweet.  This is a TWEETY-tweet.";
-    //var tweet = getSelectedValueFrom("tweets");
+    var tweet = getSelectedValueFrom("tweets");
     context.font = "italic 1.2em serif";
     
     // If tweet is too long, we'll have to break it down to 
@@ -201,48 +199,6 @@ function updateTweets(tweets) {
     }
     tweetsSelection.selectedIndex = 0;
 }
-
-/**
- * Split a string into multiple lines.
- *
- * @param string the string to split into multiple lines
- * @return an array of strings
- */
-// function splitIntoLines(string) {
-//     var lines = new Array();
-//     
-//     // Loop 1
-//     var startOfLineIndex = 0;
-//     var endOfLineIndex = LINE_LIMIT;    
-//     var lineBreakIndex = string.indexOf(' ', endOfLineIndex);    
-//     lines.push(string.substring(startOfLineIndex, lineBreakIndex));
-//     
-//     // Loop 2
-//     startOfLineIndex = lineBreakIndex + 1;
-//     endOfLineIndex = startOfLineIndex + LINE_LIMIT;
-//     lineBreakIndex = string.indexOf(' ', endOfLineIndex);
-//     lines.push(string.substring(startOfLineIndex, lineBreakIndex));
-// 
-//     // Loop 3 (with check to see if reach end of string)
-//     startOfLineIndex = lineBreakIndex + 1;
-//     endOfLineIndex = startOfLineIndex + LINE_LIMIT;
-//     lineBreakIndex = string.indexOf(' ', endOfLineIndex);
-//     if (lineBreakIndex === -1) {
-//         // No more space char to insert line break into.
-//         break;
-//     }
-//     lines.push(string.substring(startOfLineIndex, lineBreakIndex));
-//     
-//     // Loop ends when:
-//     // 1. Reach end of string.
-//     // 2. No more space chars to insert line breaks into.
-//     while (endOfLineIndex < string.length && lineBreakIndex !== -1) {
-//         
-//     }
-//                             
-//     return lines;
-// }
-
 
 /**
  * Split a string into multiple lines.
